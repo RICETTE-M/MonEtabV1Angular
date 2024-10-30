@@ -1,16 +1,16 @@
 import { Routes } from '@angular/router';
-import {SidebarComponent} from './presentations/layout/sidebar/sidebar.component';
-import {HomeComponent} from './presentations/pages/home/home.component';
-import {ListStudentComponent} from './presentations/pages/student/list-student/list-student.component';
-import {ListTeacherComponent} from './presentations/pages/teacher/list-teacher/list-teacher.component';
-import {ListUserComponent} from './presentations/pages/user/list-user/list-user.component';
-import {RapportComponent} from './presentations/pages/rapport/rapport.component';
-import {AddUserComponent} from './presentations/pages/user/add-user/add-user.component';
-import {AuthComponent} from './presentations/pages/auth/auth.component';
-import {StudentComponent} from './presentations/pages/student/add-student/student.component';
-import {TeacherComponent} from './presentations/pages/teacher/add-Teacher/teacher.component';
-import {UpdateStudentComponent} from './presentations/pages/student/update-student/update-student.component';
-import {UpdateTeacherComponent} from './presentations/pages/teacher/update-teacher/update-teacher.component';
+import {SidebarComponent} from './presentations/components/layout/sidebar/sidebar.component';
+import {ListStudentComponent} from './presentations/page/student/list-student/list-student.component';
+import {ListTeacherComponent} from './presentations/page/teacher/list-teacher/list-teacher.component';
+import {ListUserComponent} from './presentations/page/user/list-user/list-user.component';
+import {AddUserComponent} from './presentations/page/user/add-user/add-user.component';
+import {StudentComponent} from './presentations/page/student/add-student/student.component';
+import {TeacherComponent} from './presentations/page/teacher/add-Teacher/teacher.component';
+import {UpdateStudentComponent} from './presentations/page/student/update-student/update-student.component';
+import {UpdateTeacherComponent} from './presentations/page/teacher/update-teacher/update-teacher.component';
+import {AuthComponent} from './presentations/page/auth/auth.component';
+import {HomeComponent} from './presentations/page/home/home.component';
+import {RapportComponent} from './presentations/page/rapport/rapport.component';
 
 export const routes: Routes = [
   { path : "login" , component : AuthComponent},

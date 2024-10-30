@@ -2,30 +2,48 @@
 <div class="main-content">
   <main>
     <header class="header">
-      <h1>Utilisateur (2)</h1>
-      <a href="ajouter_utilisateur.html"> <img src="../icon/plus.png" style="width: 10px;height: 10px" alt=""> Nouveau profeseur</a>
+      <h1>Élèves (2)</h1>
+      <a routerLink="/base/add-student"> <img src="../icon/plus.png" style="width: 10px;height: 10px" alt=""> Nouvel élève</a>
     </header>
     <section class="table-section">
       <table>
         <thead>
         <tr>
-          <th>Pseudo</th>
-          <th>Date de creation</th>
+          <th>Nom</th>
+          <th>Prénom</th>
+          <th>Genre</th>
+          <th>Classe</th>
+          <th>Matricule</th>
+          <th>Age</th>
+          <th>Téléphone</th>
+          <th>Ville</th>
           <th>Actions</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-          <td>admin</td>
-          <td>16/03/2024</td>
+          <td>KOFFI</td>
+          <td>George</td>
+          <td>M</td>
+          <td>Tle</td>
+          <td>GDJ7GDGD</td>
+          <td>25</td>
+          <td>0123456789</td>
+          <td>Bonoua</td>
           <td>
             <button class="edit-btn">Modifier</button>
             <button class="delete-btn">Supprimer</button>
           </td>
         </tr>
         <tr>
-          <td>user2</td>
-          <td>13/03/2024</td>
+          <td>KONÉ</td>
+          <td>Sali</td>
+          <td>F</td>
+          <td>2nd</td>
+          <td>GDJ7GDGD</td>
+          <td>22</td>
+          <td>0123456789</td>
+          <td>Abidjan</td>
           <td>
             <button class="edit-btn">Modifier</button>
             <button class="delete-btn">Supprimer</button>
@@ -45,7 +63,7 @@
       <h2>ATTENTION !!!</h2>
     </div>
     <div class="modal-body">
-      <p>Voulez-vous supprimer ce professeur ?</p>
+      <p>Voulez-vous supprimer cet élève ?</p>
     </div>
     <div class="modal-footer">
       <button id="confirmYes" class="modal-btn yes-btn">Oui</button>
@@ -55,4 +73,3 @@
 </div>
 
 <script src="../js/Modal.js"></script>
-

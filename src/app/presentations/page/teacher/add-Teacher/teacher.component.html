@@ -6,10 +6,10 @@
       <a href="#" class="retour">← Retour</a>
     </div>
     <h2>Ajouter un Professeur</h2>
-    <form id="addStudentForm">
+    <form  [formGroup]="teacherForm" id="addStudentForm">
       <div class="form-row">
-        <input type="text" id="nom" placeholder="Nom" required>
-        <input type="text" id="prenom" placeholder="Prénom" required>
+        <input formControlName="last_name"  type="text" id="nom" placeholder="Nom" required>
+        <input formControlName="first_name" type="text" id="prenom" placeholder="Prénom" required>
       </div>
       <div class="form-row">
         <div>
@@ -31,12 +31,12 @@
           <option value="Philosophie">Philosophie</option>
           <option value="Français">Français</option>
         </select>
-        <input type="date" id="dateNaissance" required>
+        <input formControlName="birthday" type="date" id="dateNaissance" required>
       </div>
 
       <div class="form-row">
-        <input type="tel" id="telephone" placeholder="Téléphone">
-        <input type="text" id="ville" placeholder="Ville">
+        <input formControlName="phone_number" type="tel" id="telephone" placeholder="Téléphone">
+       <!-- <input formControlName="city" type="text" id="ville" placeholder="Ville">-->
       </div>
       <div class="form-row buttons">
         <button type="button" class="btn-cancel">Annuler</button>
