@@ -1,4 +1,4 @@
-import {
+/*import {
   HttpErrorResponse,
   HttpEvent,
   HttpHandlerFn,
@@ -11,9 +11,9 @@ import {LocalStorageService} from '../services/local-storage.service';
 import {catchError, Observable, throwError} from 'rxjs';
 import {Router} from '@angular/router';
 
-export const jwtInterceptor: HttpInterceptorFn = (req: HttpRequest<any>, next: HttpHandlerFn): Observable<HttpEvent<any>> => {
+export const jwtInterceptor//: HttpInterceptorFn = (req: HttpRequest<any>, next: HttpHandlerFn): Observable<HttpEvent<any>> => {
 
-  const localStorage: LocalStorageService = inject(LocalStorageService);
+ /* const localStorage: LocalStorageService = inject(LocalStorageService);
   const router: Router = inject(Router);
 
   const token: string | null = localStorage.getToken();
@@ -47,5 +47,5 @@ export const jwtInterceptor: HttpInterceptorFn = (req: HttpRequest<any>, next: H
       // Retourner l'erreur pour être traitée par les composants appelants si nécessaire
       return throwError(() => new Error(error.message));
     })
-  );
-};
+  );*/
+//}

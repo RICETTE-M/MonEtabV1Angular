@@ -4,7 +4,6 @@ import {Login} from '../../../domains/interfaces/login';
 import {BaseService} from '../../../core/services/base-service/base.service';
 import {Router} from '@angular/router';
 import {environmentProd} from '../../../../environments/environment.prod';
-import {error} from '@angular/compiler-cli/src/transformers/util';
 
 @Component({
   selector: 'app-connexion',
@@ -13,8 +12,8 @@ import {error} from '@angular/compiler-cli/src/transformers/util';
   templateUrl: './connexion.component.html',
   styleUrl: './connexion.component.css'
 })
-export class ConnexionComponent  implements OnInit{
-  formLogin!: FormGroup;
+export class ConnexionComponent {
+  /*formLogin!: FormGroup;
   login: Login={
     username: "",
     password: "",
@@ -47,7 +46,7 @@ export class ConnexionComponent  implements OnInit{
         error:(error: any)
 
     })
-  }
+  }*/
 
 
 }
